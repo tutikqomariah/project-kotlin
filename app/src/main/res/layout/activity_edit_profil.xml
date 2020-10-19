@@ -17,6 +17,30 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:hint="Nama"/>
+    <EditText
+        android:id="@+id/edtProfilGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Gender"/>
+    <EditText
+        android:id="@+id/edtProfilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/edtProfilTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Telp"/>
+    <EditText
+        android:id="@+id/edtProfilAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Alamat"/>
     <Button
         android:id="@+id/btnEditSave"
         android:layout_width="match_parent"

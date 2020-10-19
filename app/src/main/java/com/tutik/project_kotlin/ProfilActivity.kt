@@ -46,6 +46,14 @@ class ProfilActivity : AppCompatActivity() {
     // mengirimkan data dengan keyName "nama"
         val namaUser = txtName.text.toString()
         intent.putExtra("nama", namaUser)
+        val genderUser = txtGender.text.toString()
+        intent.putExtra("gender", genderUser)
+        val emailUser = txtEmail.text.toString()
+        intent.putExtra("email", emailUser)
+        val telpUser = txtTelp.text.toString()
+        intent.putExtra("telp", telpUser)
+        val alamatUser = txtAddress.text.toString()
+        intent.putExtra("alamat", alamatUser)
         startActivityForResult(intent, REQUEST_CODE)
     }
     //fungsi untuk menangkap hasil dari proses startActivityForResult
@@ -55,8 +63,16 @@ class ProfilActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE){
             if (resultCode == Activity.RESULT_OK) {
     //jika sukses maka data hasil edit kita tampikan ke TextView txtName
-                val result = data?.getStringExtra("nama")
-                txtName.text = result
+                val name = data?.getStringExtra("nama")
+                txtName.text = name
+                val gender = data?.getStringExtra("gender")
+                txtGender.text = gender
+                val email = data?.getStringExtra("email")
+                txtEmail.text = email
+                val telp = data?.getStringExtra("telp")
+                txtTelp.text = telp
+                val alamat = data?.getStringExtra("alamat")
+                txtAddress.text = alamat
             }else{
     //jika gagal maka tampilkan toast
                 Toast.makeText(this, "Edit failed",
