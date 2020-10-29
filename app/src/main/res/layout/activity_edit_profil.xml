@@ -17,12 +17,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:hint="Nama"/>
-    <EditText
-        android:id="@+id/edtProfilGender"
+    <Spinner
+        android:id="@+id/spinnerProfilGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Gender"/>
+        android:entries="@array/jenis_kelamin"/>
     <EditText
         android:id="@+id/edtProfilEmail"
         android:layout_width="match_parent"
@@ -34,7 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Telp"/>
+        android:hint="Telp"
+        android:inputType="phone"/>
     <EditText
         android:id="@+id/edtProfilAlamat"
         android:layout_width="match_parent"
